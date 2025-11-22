@@ -43,7 +43,7 @@ const ViajeForm = () => {
                 // Filtra por ciudades activas (asumiendo que tienen el campo 'activo')
                 setCiudades(ciudadesData.filter(c => c.activo));
 
-                if (carrosData.length === 0 || ciudadesData.length < 2) {
+                if (carrosData.length === 0 || ciudadesData.length === 0) {
                     setError('No hay suficientes Carros o Ciudades activas para crear un viaje.');
                     return;
                 }
