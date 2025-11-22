@@ -1,9 +1,7 @@
+
 # Proyecto Next.js + Django -- Prueba Técnica
 
-Este proyecto es una aplicación construida con **Next.js** para el
-frontend y **Django REST Framework** para el backend. A continuación
-encontrarás todos los pasos necesarios para instalar, configurar y
-ejecutar el entorno completo.
+Este proyecto es una aplicación construida con **Next.js** para el frontend y **Django REST Framework** para el backend. A continuación encontrarás todos los pasos necesarios para instalar, configurar y ejecutar el entorno completo.
 
 ------------------------------------------------------------------------
 
@@ -11,14 +9,14 @@ ejecutar el entorno completo.
 
 ### **Frontend (Next.js)**
 
--   Node.js 18+
--   npm o yarn
+- Node.js 18+
+- npm o yarn
 
 ### **Backend (Django)**
 
--   Python 3.10+
--   pip
--   Virtualenv (opcional pero recomendado)
+- Python 3.10+
+- pip
+- Virtualenv (opcional pero recomendado)
 
 ------------------------------------------------------------------------
 
@@ -30,52 +28,61 @@ ejecutar el entorno completo.
 
 ### 1. Clonar el repositorio
 
-``` bash
-git clone <url-del-repositorio>
+```bash
+git clone <https://github.com/MAAC2020/pruebatecnicaproyectsandsystem>
 cd backend/
 ```
 
 ### 2. Crear entorno virtual (opcional pero recomendado)
 
-``` bash
+```bash
 python -m venv venv
 ```
 
 ### 3. Activar entorno virtual
 
--   **Windows**
+- **Windows**
 
-``` bash
+```bash
 venv\Scripts\activate
 ```
 
--   **Mac / Linux**
+- **Mac / Linux**
 
-``` bash
+```bash
 source venv/bin/activate
 ```
 
 ### 4. Instalar dependencias
 
-``` bash
+```bash
 pip install -r requirements.txt
 ```
 
 ### 5. Ejecutar migraciones
 
-``` bash
+```bash
 python manage.py migrate
 ```
 
 ### 6. Ejecutar servidor Django
 
-``` bash
+```bash
 python manage.py runserver
 ```
 
-El backend quedará disponible en:
+### 7. Acceder al backend
 
-    http://127.0.0.1:8000
+Una vez levantado el servidor, puedes acceder al backend desde tu navegador o desde cualquier cliente HTTP (Postman, Insomnia, etc.):
+
+```
+http://127.0.0.1:8000
+```
+
+Por ejemplo:
+
+- Listar recursos de tu API: `http://127.0.0.1:8000/api/v1/<recurso>/`
+- Acceder al admin de Django: `http://127.0.0.1:8000/admin/`
 
 ------------------------------------------------------------------------
 
@@ -83,40 +90,43 @@ El backend quedará disponible en:
 
 ### 1. Ir al directorio del frontend
 
-``` bash
+```bash
 cd frontend/
 ```
 
 ### 2. Instalar dependencias
 
-``` bash
+```bash
 npm install
 # o
 yarn install
 ```
 
-
-
 ### 3. Ejecutar el entorno de desarrollo
 
-``` bash
+```bash
 npm run dev
 # o
 yarn dev
 ```
 
-La app quedará en:
+### 4. Acceder al frontend
 
-    http://localhost:3000
+Una vez levantado el servidor de desarrollo, puedes acceder a la aplicación desde tu navegador:
+
+```
+http://localhost:3000
+```
 
 ------------------------------------------------------------------------
 
 ## 📁 Estructura General
 
-    root
-     ├── backend/     -> Proyecto Django REST
-     ├── frontend/    -> Proyecto Next.js
-     └── README.md
+```
+root
+ ├── backend/     -> Proyecto Django REST
+ ├── frontend/    -> Proyecto Next.js
+ └── README.md
+```
 
 ------------------------------------------------------------------------
-
